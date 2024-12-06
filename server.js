@@ -25,7 +25,7 @@ app.use("/items", itemRouter);
 app.use("/order", orderRouter);
 app.use("/cart", cartRouter);
 app.use("/category", categoryRouter);
-app.use("/health", (req, res) => {
+app.get("/health", (req, res) => {
   res.send("Server is up and running");
 }
 );
